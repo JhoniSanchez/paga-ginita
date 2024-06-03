@@ -149,8 +149,8 @@ const App = () => {
   }
 
   const getblog2 = async () => {
-    const RESPONSE = await blogService.getAll()
-    const filter3987 = RESPONSE.sort(compararProductosPorAB)
+    // const RESPONSE = await blogService.getAll()
+    const filter3987 = datos.datos.sort(compararProductosPorAB)
     setBlogs3(filter3987)
   }
 
