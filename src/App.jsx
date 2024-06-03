@@ -271,7 +271,7 @@ ruta = "ab"
           <option value="ELECTRODOMESTICO">ELECTRODOMESTICO</option>
           <option value="PERSONAL">PERSONAL</option>
         </select> {blogs2.length} Art.
-        <img className="mom" src="../mom.jpg" alt="" />
+        {/* <img className="mom" src={`${process.env.PUBLIC_URL}/mom.jpg`} alt="" /> */}
 
       </div>
 
@@ -322,7 +322,7 @@ ruta = "ab"
           )} */}
 
 
-      <BrowserRouter>
+      <BrowserRouter basename="/paga-ginita">
         <Routes>
 
         <Route path="/ventas-likes" element={<Targeta blogs={blogs2}  />}></Route>
