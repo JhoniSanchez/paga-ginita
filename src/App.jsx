@@ -140,7 +140,7 @@ const App = () => {
     // console.log(ee)
     // const catego = ee.filter(el => el.categoria === categoria)
     // console.log(catego)
-    setcategoria("ADORNO")
+    setcategoria("PERSONAL")
     //ES NECESARIO CREAR COPIAS INDEPENDIENTES, PORQUE LA ORDENACION CON EL METODO SORT, ES POR REFERENCIA A EE, SE ESTA APUNTANDO A LA MISMA SECCION DE MEMORIA,
     //como el ... solo hace copia superficial, se hizo uso del JSONparse Stringify para poder evadir la referneica
         const filter = datos.datos.sort(compararProductosPorLikes)
@@ -264,12 +264,12 @@ ruta = "ab"
         <label htmlFor="">Categoria</label>
         <select name="CATEGORIA" id="" onChange={CARGACATEGORIA}>
 
+          <option value="PERSONAL">PERSONAL</option>
           <option value="ADORNO">ADORNO</option>
           <option value="ADORNO-NAVIDAD">NAVIDAD</option>
           <option value="COCINA">COCINA</option>
           <option value="CRISTALERIA">CRISTALERIA</option>
           <option value="ELECTRODOMESTICO">ELECTRODOMESTICO</option>
-          <option value="PERSONAL">PERSONAL</option>
         </select> {blogs2.length} Art.
         <img className="mom" src="https://raw.githubusercontent.com/JhoniSanchez/paga-ginita/master/public/mom.jpg" alt="" />
 
