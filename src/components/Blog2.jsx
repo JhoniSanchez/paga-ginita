@@ -145,11 +145,11 @@ setver(!ver)
           />
 
           <div className="item-details">
-                              <div className="ver" style={{ display: ver ? "block" : "none" }}>{blog.producto}*{blog.actualizado}
+                              <div className="ver" style={{ display: ver ? "block" : "none" }}>{blog.producto}
 
             <p className="price">RD$ {precio} </p>
             <span className="Wa"><button><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}*`}>{blog.ubicacion}-{blog.codigo} </a></button></span>
-          
+            <button className="Wa2"><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}*`}>Preguntar por WhatsApp</a></button>
           </div>
           </div>
         </div>

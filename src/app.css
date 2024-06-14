@@ -110,6 +110,17 @@ a {
   padding: 0.2rem;
   font-size: 1.2rem;
 }
+
+.Wa2  {
+  background-color: 	#25D366;
+  border: none;
+  margin: 0.2rem;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+
 .encabezado{
   position: fixed;
   top: 0px; /* Puedes ajustar esta propiedad para cambiar la posición vertical */
