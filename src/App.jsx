@@ -233,9 +233,9 @@ const App = () => {
 
   useEffect(() => {
 
+    const filter3987 = blogs.sort(compararProductosPorLikes)
 
-
-    let catego = blogs.filter(el => el.categoria === categoria)
+    let catego = filter3987.filter(el => el.categoria === categoria)
     let catego3 = blogs3.filter(el => el.categoria === categoria)
 
     setBlogs2(catego)
@@ -261,15 +261,15 @@ ruta = "ab"
       {/* <div className="encabezado"> */}
       <div className={`encabezado ${ruta}`}>
         <h2>Paca La Profe Ginita</h2>
-        <label htmlFor="">Categoria</label>
-        <select name="CATEGORIA" id="" onChange={CARGACATEGORIA}>
+        <label className="llllll" htmlFor="">Categoria</label>
+        <select name="CATEGORIA" className="llllll" onChange={CARGACATEGORIA}>
 
           <option value="PERSONAL">PERSONAL</option>
           <option value="ADORNO">ADORNO</option>
           <option value="ADORNO-NAVIDAD">NAVIDAD</option>
           <option value="COCINA">COCINA</option>
           <option value="CRISTALERIA">CRISTALERIA</option>
-          <option value="ELECTRODOMESTICO">ELECTRODOMESTICO</option>
+          <option value="ELECTRODOMESTICO">ELECTRO...</option>
         </select> {blogs2.length} Art.
         <img className="mom" src="https://raw.githubusercontent.com/JhoniSanchez/paga-ginita/master/public/mom.jpg" alt="" />
 
