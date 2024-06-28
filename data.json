@@ -100,7 +100,7 @@
       "codigo": 384,
       "ubicacion": "C11",
       "actualizado": 9,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 412,
       "id": "664e7996e1d4c133e6880401"
@@ -325,7 +325,7 @@
       "codigo": 198,
       "ubicacion": "C7C10",
       "actualizado": 7,
-      "mostrar": false,
+      "mostrar": true,
       "likes": 0,
       "img": 197,
       "id": "664e7996e1d4c133e688040f"
