@@ -430,7 +430,7 @@
       "codigo": 108,
       "ubicacion": "C5",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 107,
       "id": "664e7996e1d4c133e6880417"
@@ -1285,7 +1285,7 @@
       "codigo": 152,
       "ubicacion": "C6",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 151,
       "id": "664e7996e1d4c133e6880451"
@@ -1300,7 +1300,7 @@
       "codigo": 317,
       "ubicacion": "AC10",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 343,
       "id": "664e7996e1d4c133e6880450"
@@ -4315,7 +4315,7 @@
       "codigo": 229,
       "ubicacion": "C8",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 228,
       "id": "664e7997e1d4c133e688051b"
@@ -6040,7 +6040,7 @@
       "codigo": 310,
       "ubicacion": "AC10",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 336,
       "id": "664e7997e1d4c133e688057e"
@@ -6370,7 +6370,7 @@
       "codigo": 383,
       "ubicacion": "C11",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 411,
       "id": "664e7998e1d4c133e68805a8"
@@ -6400,7 +6400,7 @@
       "codigo": 382,
       "ubicacion": "C11",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 410,
       "id": "664e7998e1d4c133e68805ab"
@@ -6460,7 +6460,7 @@
       "codigo": 378,
       "ubicacion": "C11",
       "actualizado": 2,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 406,
       "id": "664e7998e1d4c133e68805a7"
@@ -7375,7 +7375,7 @@
       "codigo": 418,
       "ubicacion": "C12",
       "actualizado": 3,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 461,
       "id": "664e7998e1d4c133e68805e7"
@@ -7615,7 +7615,7 @@
       "codigo": 307,
       "ubicacion": "AC10",
       "actualizado": 0,
-      "mostrar": true,
+      "mostrar": false,
       "likes": 0,
       "img": 333,
       "id": "664e7998e1d4c133e68805f6"
