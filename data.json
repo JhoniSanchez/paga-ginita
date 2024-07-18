@@ -421,16 +421,16 @@
       "id": "664e7996e1d4c133e6880416"
     },
     {
-      "producto": "BULTO MALETA P C C P TELA NEGRO       ",
+      "producto": "BULTO GRANDE PC NEGRO CONDICON NUEVO",
       "categoria": "PERSONAL",
       "precio": 350,
       "disponible": 1,
       "color": "NEGRO",
       "tamano": "NORMAL",
-      "codigo": 108,
+      "codigo": 701,
       "ubicacion": "C5",
-      "actualizado": 0,
-      "mostrar": false,
+      "actualizado": 12,
+      "mostrar": true,
       "likes": 0,
       "img": 107,
       "id": "664e7996e1d4c133e6880417"
