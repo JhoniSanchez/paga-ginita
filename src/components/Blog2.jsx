@@ -148,8 +148,8 @@ setver(!ver)
                               <div className="ver" style={{ display: ver ? "block" : "none" }}>{blog.producto}
 
             <p className="price"> </p>
-            <span className="Wa"><button><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}*`}>{blog.ubicacion}-{blog.codigo} </a></button></span>
-            <button className="Wa2"><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}*`}>Preguntar por WhatsApp</a></button>
+            <span className="Wa"><button><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}-${blog.precio*2}-${blog.precio*1.5}-${blog.precio*1.3}*`}>{blog.ubicacion}-{blog.codigo}-{blog.precio*2}-{blog.precio*1.5}-{blog.precio*0.1}-{blog.precio*1.2} </a></button></span>
+            <button className="Wa2"><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}-${blog.precio*2}-${blog.precio*1.5}-${blog.precio*1.3}-${blog.precio*2.5}*`}>Preguntar por WhatsApp</a></button>
           </div>
           </div>
         </div>
