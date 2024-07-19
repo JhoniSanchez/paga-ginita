@@ -122,7 +122,7 @@
     },
     {
       "producto": "LAMPARA MESA NOCTURNA       ",
-      "categoria": "ELECTRODOMESTICO",
+      "categoria": "PERSONAL",
       "precio": 1600,
       "disponible": 1,
       "color": "NEGRO",
@@ -152,7 +152,7 @@
     },
     {
       "producto": "PLANCHA TENAZA MARCAS REMINGTON       ",
-      "categoria": "ELECTRODOMESTICO",
+      "categoria": "PERSONAL",
       "precio": 1500,
       "disponible": 1,
       "color": "NEGRO",
@@ -212,7 +212,7 @@
     },
     {
       "producto": "OLLA ELECTRICA CROMADA KITCHEN LIDDING       ",
-      "categoria": "ELECTRODOMESTICO",
+      "categoria": "PERSONAL",
       "precio": 1800,
       "disponible": 1,
       "color": "NEGRO",
@@ -242,7 +242,7 @@
     },
     {
       "producto": "TRITURADORA DE ALIMENTOS NEGRA Y GRIS NINJA PROFESIONAL       ",
-      "categoria": "ELECTRODOMESTICO",
+      "categoria": "PERSONAL",
       "precio": 1500,
       "disponible": 1,
       "color": "NEGRO",
@@ -272,7 +272,7 @@
     },
     {
       "producto": "RISADOR DE CABELLO NEGRO CONAIR INSTANT HEAT       ",
-      "categoria": "ELECTRODOMESTICO",
+      "categoria": "PERSONAL",
       "precio": 800,
       "disponible": 1,
       "color": "NEGRO",
@@ -332,7 +332,7 @@
     },
     {
       "producto": "TRITURADORA GRIS  NUTRIBULET       ",
-      "categoria": "ELECTRODOMESTICO",
+      "categoria": "PERSONAL",
       "precio": 2500,
       "disponible": 1,
       "color": "NEGRO",
@@ -361,8 +361,8 @@
       "id": "664e7996e1d4c133e6880412"
     },
     {
-      "producto": "MAQUINA DE COSER DE MANO ROJA 600 PESOS       ",
-      "categoria": "ELECTRODOMESTICO",
+      "producto": "MAQUINA DE COSER DE MANO ROJA       ",
+      "categoria": "PERSONAL",
       "precio": 800,
       "disponible": 1,
       "color": "NEGRO",
@@ -707,7 +707,7 @@
     },
     {
       "producto": "MASAJEADOR ELECTRICO CUELLO ESPONJOSO       ",
-      "categoria": "ELECTRODOMESTICO",
+      "categoria": "PERSONAL",
       "precio": 800,
       "disponible": 1,
       "color": "NEGRO",
