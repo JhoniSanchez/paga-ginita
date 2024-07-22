@@ -228,3 +228,12 @@ color: #ffd900;
 .ver{
   color: white;
 }
+
+.price2 {
+  position: relative;
+  top: -1.5rem;
+  /* left: ; */
+  background-color: #000000d0!important;
+  color: #ff0000 !important; 
+  font-size: 0.99rem !important;
+}

@@ -145,11 +145,11 @@ const link2 = `.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.
             loading="lazy"
             onClick={()=>vert()}
           />
-
+<p className="price2">RD$ {blog.precio} </p>
           <div className="item-details">
                               <div className="ver" style={{ display: ver ? "block" : "none" }}>{blog.producto}
 
-            <p className="price"> </p>
+            <p className="price">RD$ {blog.precio} </p>
             <span className="Wa"><button><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=${link}%20Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}-${blog.precio*2}-${blog.precio*1.5}-${blog.precio*1.3}*`}>{blog.ubicacion}-{blog.codigo}-{blog.precio*2}-{blog.precio*1.5}-{blog.precio*0.1}-{blog.precio*1.2} </a></button></span>
             <button className="Wa2"><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20codigo:%20${blog.ubicacion}-${blog.codigo}-${blog.precio*2}-${blog.precio*1.5}-${blog.precio*1.3}-${blog.precio*2.5}${link2}%20`}>Preguntar por WhatsApp</a></button>
           </div>
@@ -157,6 +157,7 @@ const link2 = `.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.
         </div>
       // </div>
     // </div>
+    
   )
 }
 
