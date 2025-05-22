@@ -1,23 +1,23 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react";
 import { FcLike } from "react-icons/fc";
 
 // import "../../src/app.css"
-import blogs from "../services/blogs"
+import blogs from "../services/blogs";
 
 const Blog2 = ({ blog, dele }) => {
-  const [like, setlikes] = useState(0)
-  const [act, setact] = useState(blog.actualizado)
-  const [visible, setvisible] = useState(blog.mostrar)
-  const [nuevaData, setnuevaData] = useState(undefined)
-  const [cambio, setcambio] = useState(false)
+  const [like, setlikes] = useState(0);
+  const [act, setact] = useState(blog.actualizado);
+  const [visible, setvisible] = useState(blog.mostrar);
+  const [nuevaData, setnuevaData] = useState(undefined);
+  const [cambio, setcambio] = useState(false);
   const imgRef = useRef();
   const [isVisible, setIsVisible] = useState(false);
-  const [precio, setprecio] = useState(blog.precio)
+  const [precio, setprecio] = useState(blog.precio);
   const [ver, setver] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
           observer.unobserve(entry.target);
@@ -38,7 +38,7 @@ const Blog2 = ({ blog, dele }) => {
 
   // console.log(blog)
 
-  let aa = like === 0 ? 1 : like + 1
+  let aa = like === 0 ? 1 : like + 1;
   // const date = {
   //   producto: blog.producto,
   //   categoria: blog.categoria,
@@ -64,103 +64,115 @@ const Blog2 = ({ blog, dele }) => {
     actualizado: act + 1,
     mostrar: blog.mostrar,
     likes: blog.likes + aa,
-  }
+  };
   const date3 = {
     mostrar: !blog.mostrar,
-  }
+  };
 
   // console.log(cambio)
   const uplikes = async (id, data) => {
-    setlikes(() => like + 1)
-    await blogs.update(id, data)
-  }
-
-
+    setlikes(() => like + 1);
+    await blogs.update(id, data);
+  };
 
   const actualizado = async (e, id, data) => {
     // console.log(date2)
-    console.log(e.target, id, data, nuevaData)
-    setnuevaData(() => (act + 1))
-    setact(() => act + 1)
-    await blogs.update(id, { "actualizado": act + 1 })
-  }
-
+    console.log(e.target, id, data, nuevaData);
+    setnuevaData(() => act + 1);
+    setact(() => act + 1);
+    await blogs.update(id, { actualizado: act + 1 });
+  };
 
   const mostrar = async (e, id, data) => {
     console.log(e.target.name, "***", data);
-    setnuevaData(() => ({ [e.target.name]: !blog.mostrar }))
+    setnuevaData(() => ({ [e.target.name]: !blog.mostrar }));
 
+    setvisible(!visible);
 
-    setvisible(!visible)
-
-    await blogs.update(id, { mostrar: !blog.mostrar })
-  }
-
+    await blogs.update(id, { mostrar: !blog.mostrar });
+  };
 
   const actualizarDatos = async (id, data) => {
     console.log(id, data);
-    setprecio(data.precio)
-    await blogs.update(id, data)
-    setcambio(!cambio)
+    setprecio(data.precio);
+    await blogs.update(id, data);
+    setcambio(!cambio);
+  };
 
-  }
-
-  const vert = ()=>{
-setver(!ver)
-  }
+  const vert = () => {
+    setver(!ver);
+  };
   // console.log(blog.img)
 
   let img = 100;
-  if (blog.img <= 103) {
-    img = 100
-  }
-  else if (blog.img < 204) {
-    img = 200
-  }
-
-  else if (blog.img < 306) {
-    img = 300
-  }
-
-  else if (blog.img < 406) {
-    img = 400
-  }
-  else if (blog.img < 505) {
-    img = 500
-  }
-  else if (blog.img < 600) {
-    img = 600
+  if (blog.img < 100) {
+    img = 100;
+  } else if (blog.img < 200) {
+    img = 200;
+  } else if (blog.img < 300) {
+    img = 300;
+  } else if (blog.img < 400) {
+    img = 400;
+  } else if (blog.img < 500) {
+    img = 500;
+  } else if (blog.img < 600) {
+    img = 600;
   }
 
-const link = `https://raw.githubusercontent.com/JhoniSanchez/img2/master/${img}/${blog.img}.jpg`
-const link2 = `.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20https://github.com/JhoniSanchez/img2/blob/master/${img}/${blog.img}.jpg?raw=true`
+  const link = `https://raw.githubusercontent.com/JhoniSanchez/imagenes/main/${img}/${blog.img}.jpg`;
+  const link2 = `.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20.%20https://github.com/JhoniSanchez/img2/blob/master/${img}/${blog.img}.jpg?raw=true`;
   return (
     // <div className="blogbody">
-      // <div className="gallery">{}
-        <div className="gallery-item" style={{ display: blog.mostrar ? "block" : "none" }}>
-          <img
-            ref={imgRef}
-            src={isVisible && blog.mostrar ? `https://raw.githubusercontent.com/JhoniSanchez/img2/master/${img}/${blog.img}.jpg` : ""}
-            alt=""
-            loading="lazy"
-            onClick={()=>vert()}
-          />
-<p className="price2">RD$ {blog.precio} </p>
-          <div className="item-details">
-                              <div className="ver" style={{ display: ver ? "block" : "none" }}>{blog.producto}
+    // <div className="gallery">{}
+    <div
+      className="gallery-item"
+      style={{ display: blog.mostrar ? "block" : "none" }}
+    >
+      <img
+        ref={imgRef}
+        src={
+          isVisible && blog.mostrar
+            ? `https://raw.githubusercontent.com/JhoniSanchez/imagenes/main/${img}/${blog.img}.JPG`
+            : ""
+        }
+        alt=""
+        loading="lazy"
+        onClick={() => vert()}
+      />
+      <p className="price2">RD$ {blog.precio} </p>
+      <div className="item-details">
+        <div className="ver" style={{ display: ver ? "block" : "none" }}>
+          {blog.producto}
 
-            <p className="price">RD$ {blog.precio} </p>
-            <span className="Wa"><button><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=${link}%20Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20*codigo:%20${blog.ubicacion}-${blog.codigo}-${blog.precio*2}-${blog.precio*1.5}-${blog.precio*1.3}*`}>{blog.ubicacion}-{blog.codigo}-{blog.precio*2}-{blog.precio*1.5}-{blog.precio*0.1}-{blog.precio*1.2} </a></button></span>
-            <button className="Wa2"><a target="_blank" href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${blog.producto}%20codigo:%20${blog.ubicacion}-${blog.codigo}-${blog.precio*2}-${blog.precio*1.5}-${blog.precio*1.3}-${blog.precio*2.5}${link2}%20`}>Preguntar por WhatsApp</a></button>
-          </div>
-          </div>
+          <p className="price">RD$ {blog.precio} </p>
+          <span className="Wa">
+            <button>
+              <a
+                target="_blank"
+                href={`https://api.whatsapp.com/send/?phone=18098997894&text=${link}%20Hola%20Profe,%20me%20interesa%20el%20articulo%20${
+                  blog.producto
+                }%20*codigo:%20${blog.ubicacion}-${blog.img}*`}
+              >
+                {blog.ubicacion}-{blog.img}{" "}
+              </a>
+            </button>
+          </span>
+          <button className="Wa2">
+            <a
+              target="_blank"
+              href={`https://api.whatsapp.com/send/?phone=18098997894&text=Hola%20Profe,%20me%20interesa%20el%20articulo%20${
+                blog.producto
+              }%20codigo:%20${blog.ubicacion}-${blog.img}%20`}
+            >
+              Preguntar por WhatsApp
+            </a>
+          </button>
         </div>
-      // </div>
+      </div>
+    </div>
     // </div>
-    
-  )
-}
+    // </div>
+  );
+};
 
-
-
-export default Blog2
+export default Blog2;

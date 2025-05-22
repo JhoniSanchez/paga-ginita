@@ -174,7 +174,7 @@ const Blog = ({ blog, dele }) => {
           <img
             ref={imgRef}
             // src= { isVisible ? `https://github.com/JhoniSanchez/img/blob/master/${img}/${blog.img}.jpg?raw=true` :""
-            src={isVisible ? `https://raw.githubusercontent.com/JhoniSanchez/img/master/${img}/${blog.img}.jpg` : ""
+            src={isVisible ? `https://raw.githubusercontent.com/JhoniSanchez/imagenes/main/${img}/${blog.img}.JPG` : ""
             }
             alt=""
             loading="lazy"
