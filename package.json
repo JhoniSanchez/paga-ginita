@@ -5,14 +5,12 @@
   "homepage": "https://JhoniSanchez.github.io/paga-ginita",
   "type": "module",
   "scripts": {
-
     "dev": "vite",
-  "build": "vite build",
-  "serve": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "subir": "npm run build && gh-pages -d dist"
-
   },
   "dependencies": {
     "axios": "1.4.0",
@@ -33,7 +31,7 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.3",
-    "gh-pages": "6.1.1",
+    "gh-pages": "^6.1.1",
     "vite": "4.4.5"
   },
   "jest": {

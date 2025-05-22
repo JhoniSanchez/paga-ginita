@@ -76,7 +76,6 @@ const Blog = ({ blog, dele }) => {
   }
 
 
-
   const actualizado = async (e, id, data) => {
     // console.log(date2)
     console.log(e.target, id, data, nuevaData)
@@ -108,27 +107,19 @@ const Blog = ({ blog, dele }) => {
   // console.log(blog.img)
 
   let img = 100;
-  if (blog.img < 100) {
-    img = 100
+  if (Number(blog.img) < 100) {
+    img = 100;
+  } else if (Number(blog.img) < 200) {
+    img = 200;
+  } else if (Number(blog.img) < 300) {
+    img = 300;
+  } else if (Number(blog.img)< 400) {
+    img = 400;
+  } else if (Number(blog.img) < 500) {
+    img = 500;
+  } else if (Number(blog.img)< 600) {
+    img = 600;
   }
-  else if (blog.img < 204) {
-    img = 200
-  }
-
-  else if (blog.img < 306) {
-    img = 300
-  }
-
-  else if (blog.img < 406) {
-    img = 400
-  }
-  else if (blog.img < 505) {
-    img = 500
-  }
-  else if (blog.img < 600) {
-    img = 600
-  }
-
 
   const cambiacategoria = (e) => {
     setcatubi({ ...catubi, [e.target.name]:e.target.value })
@@ -200,13 +191,29 @@ cambio &&
     <div>
 
             <select name="categoria" value={catubi.categoria} id="" onChange={cambiacategoria}>
-              <option value="ADORNO">ADORNO</option>
+              {/* <option value="ADORNO">ADORNO</option>
               <option value="ADORNO-NAVIDAD">NAVIDAD</option>
               <option value="COCINA">COCINA</option>
               <option value="CRISTALERIA">CRISTALERIA</option>
               <option value="ELECTRODOMESTICO">ELECTRODOMESTICO</option>
               <option value="PERSONAL">PERSONAL</option>
-            </select>
+            </select> */}
+
+
+        {/* <select name="CATEGORIA" className="llllll" onChange={CARGACATEGORIA}> */}
+          <option value="MUJER">MUJER...</option>
+          <option value="CALZADO">CALZADOS</option>
+
+          <option value="PERSONAL">PERSONAL</option>
+          <option value="ADORNOS">ADORNO</option>
+
+          <option value="COCINA">COCINA</option>
+          <option value="HOGAR">HOGAR</option>
+
+          <option value="CRISTALES">CRISTALES...</option>
+          <option value="ELECTRODOMESTICO">ELECTRO...</option>
+          <option value="NAVIDAD">NAVIDAD</option>
+        </select>{" "}
 
 
             <select name="ubicacion" value={catubi.ubicacion} id="" onChange={cambiacategoria}>

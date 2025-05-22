@@ -105,17 +105,17 @@ const Blog2 = ({ blog, dele }) => {
   // console.log(blog.img)
 
   let img = 100;
-  if (blog.img < 100) {
+  if (Number(blog.img) < 100) {
     img = 100;
-  } else if (blog.img < 200) {
+  } else if (Number(blog.img) < 200) {
     img = 200;
-  } else if (blog.img < 300) {
+  } else if (Number(blog.img) < 300) {
     img = 300;
-  } else if (blog.img < 400) {
+  } else if (Number(blog.img)< 400) {
     img = 400;
-  } else if (blog.img < 500) {
+  } else if (Number(blog.img) < 500) {
     img = 500;
-  } else if (blog.img < 600) {
+  } else if (Number(blog.img)< 600) {
     img = 600;
   }
 
@@ -126,12 +126,12 @@ const Blog2 = ({ blog, dele }) => {
     // <div className="gallery">{}
     <div
       className="gallery-item"
-      style={{ display: blog.mostrar ? "block" : "none" }}
+      style={{ display: blog.mostrar == 1? "block" : "none" }}
     >
       <img
         ref={imgRef}
         src={
-          isVisible && blog.mostrar
+          isVisible && blog.mostrar == 1
             ? `https://raw.githubusercontent.com/JhoniSanchez/imagenes/main/${img}/${blog.img}.JPG`
             : ""
         }
@@ -139,7 +139,7 @@ const Blog2 = ({ blog, dele }) => {
         loading="lazy"
         onClick={() => vert()}
       />
-      <p className="price2">RD$ {blog.precio} </p>
+      <p className="price2">RD$ {blog.precio} <span className="cod"> {blog.ubicacion}{blog.img}</span> </p>
       <div className="item-details">
         <div className="ver" style={{ display: ver ? "block" : "none" }}>
           {blog.producto}

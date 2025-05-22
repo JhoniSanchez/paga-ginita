@@ -8,7 +8,7 @@
   margin-bottom: 10px;
 }
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   margin: 0;
 }
 /* .app {
@@ -22,8 +22,8 @@ body {
 }
 .blog {
   border: none;
-  margin: 0.3rem;
-  border-radius: 0.2rem;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
   padding: 0.3rem;
   background-color: rgb(255, 255, 255);
   margin: 0.1rem 0.1rem 0.5rem;
@@ -193,6 +193,12 @@ position: absolute;
 /* background-color: rgb(41, 39, 39);  */
 
 }
+.cod {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: bolder;
+  
+}
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -200,15 +206,17 @@ position: absolute;
   justify-content: space-between; /* Espacio uniforme entre columnas */
 }
 .gallery-item {
+  /* margin: 1rem; */
   width: calc(33.33% - 2px); /* Ancho de cada elemento (imagen + detalles) */
-  margin-bottom: 2px; /* Espacio inferior entre elementos */
+  margin-bottom: 3px; /* Espacio inferior entre elementos */
   box-sizing: border-box; /* Incluir padding y borde en el ancho calculado */
-  border: 1px solid #fffffffa; /* Borde ligero alrededor de cada elemento */
+  border: 0px solid #fffffffa; /* Borde ligero alrededor de cada elemento */
   border-radius: 5px; /* Bordes redondeados */
   background-color: rgb(255, 255, 255); 
 }
 .gallery-item img {
   width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  /* height: 100%; */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -231,9 +239,9 @@ color: #ffd900;
 
 .price2 {
   position: relative;
-  top: -1.5rem;
+  top: -0rem;
   /* left: ; */
-  background-color: #000000d0!important;
-  color: #ff0000 !important; 
-  font-size: 0.99rem !important;
+  background-color: #00000000!important;
+  color: #d33100 !important; 
+  font-size: 2rem !important;
 }

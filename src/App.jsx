@@ -233,20 +233,20 @@ const App = () => {
           Categoria
         </label>
         <select name="CATEGORIA" className="llllll" onChange={CARGACATEGORIA}>
-              <option value="MUJER">MUJER...</option>        
-                <option value="CALZADO">CALZADOS</option>
+          <option value="MUJER">MUJER...</option>
+          <option value="CALZADO">CALZADOS</option>
 
-              <option value="PERSONAL">PERSONAL</option>
+          <option value="PERSONAL">PERSONAL</option>
           <option value="ADORNOS">ADORNO</option>
-    
+
           <option value="COCINA">COCINA</option>
           <option value="HOGAR">HOGAR</option>
-      
+
           <option value="CRISTALES">CRISTALES...</option>
           <option value="ELECTRODOMESTICO">ELECTRO...</option>
-                <option value="NAVIDAD">NAVIDAD</option>
+          <option value="NAVIDAD">NAVIDAD</option>
         </select>{" "}
-        {blogs2.length} Art.
+        {blogs2.length-50} Art.
         <img
           className="mom"
           src="https://raw.githubusercontent.com/JhoniSanchez/paga-ginita/master/public/mom.jpg"
