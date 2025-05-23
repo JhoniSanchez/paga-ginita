@@ -10,6 +10,7 @@ import FromFilters from "./components/FromFilters";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import datos from "../data.json";
+import LocalBlog from "./components/LocalBlog";
 
 console.log(datos.datos);
 const Targeta = ({ blogs }) => {
@@ -18,6 +19,17 @@ const Targeta = ({ blogs }) => {
       <div className="gallery">
         {blogs.map((blog) => (
           <Blog2 key={blog.id} blog={blog} />
+        ))}
+      </div>
+    </div>
+  );
+};
+const Local = ({ blogs }) => {
+  return (
+    <div className="cuerpo2">
+      <div className="gallery">
+        {blogs.map((blog) => (
+          <LocalBlog key={blog.id} blog={blog} />
         ))}
       </div>
     </div>
@@ -92,8 +104,8 @@ const App = () => {
   };
 
   const compararProductosPorAB = (a, b) => {
-    const productoA = a.producto;
-    const productoB = b.producto;
+    const productoA = Number(a.img);
+    const productoB = Number(b.img);
 
     if (productoA < productoB) {
       return -1;
@@ -246,7 +258,7 @@ const App = () => {
           <option value="ELECTRODOMESTICO">ELECTRO...</option>
           <option value="NAVIDAD">NAVIDAD</option>
         </select>{" "}
-        {blogs2.length-50} Art.
+        {blogs2.length} Art.
         <img
           className="mom"
           src="https://raw.githubusercontent.com/JhoniSanchez/paga-ginita/master/public/mom.jpg"
@@ -300,6 +312,7 @@ const App = () => {
       <BrowserRouter basename="/paga-ginita">
         <Routes>
           <Route path="/" element={<Targeta blogs={blogs2} />}></Route>
+            <Route path="/local" element={<Local blogs={blogs2} />}></Route>
           <Route
             path="/administracion14152024"
             element={<Targeta2 blogs={blogs2} />}
